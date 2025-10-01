@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary position-absolute top-0 start-0 w-100"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="#">
+            <img src="images/logo.png" alt="Логотип" width="76" height="38" />
+          </a>
+          <a class="navbar-brand d-lg-none" href="#">SUBGLASS</a>
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Переключатель навигации"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#glasses">Очки</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#faq"
+                  data-bs-toggle="modal"
+                  data-bs-target="#secretGlassesModal"
+                  >Секретный бокс</a
+                >
+              </li>
+              <li class="nav-item" href="#">
+                <a class="nav-link" href="#catalog-tabs">Коллекции</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-dark d-none d-lg-block px-3">
+            Заказать
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="modal" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Заголовок модального окна</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Здесь идет основной текст модального окна</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button type="button" class="btn btn-primary">
+              Сохранить изменения
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main"></section>
+    <section class="glasses" id="glasses">
+      <div class="container py-4 py-lg-5">
+        <!-- Заголовок и описание -->
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="title-xxl mb-2">ОЧКИ</h1>
+            <p class="text-muted">
+              Традиционные оправы — это классика, но если хочется подчеркнуть
+              свою индивидуальность, стоит обратить внимание на очки необычных
+              форм. Геометрические линии, асимметрия и массивные элементы
+              превращают очки в яркий акцент образа.
+            </p>
+          </div>
+        </div>
+
+        <!-- Блок с каруселью -->
+        <div class="position-relative my-5">
+          <div id="glassesCarousel" class="carousel slide">
+            <div class="carousel-inner text-center">
+              <!-- Первый слайд -->
+              <div class="carousel-item active">
+                <div class="carousel-wrapper">
+                  <img src="images/очки1.png" alt="Очки 1" />
+                </div>
+              </div>
+
+              <!-- Второй слайд -->
+              <div class="carousel-item">
+                <div class="carousel-wrapper">
+                  <img src="images/очки2.png" alt="Очки 2" />
+                </div>
+              </div>
+
+              <!-- Третий слайд -->
+              <div class="carousel-item">
+                <div class="carousel-wrapper">
+                  <img src="images/очки3.png" alt="Очки 3" />
+                </div>
+              </div>
+
+              <!-- Четвертый слайд -->
+              <div class="carousel-item">
+                <div class="carousel-wrapper">
+                  <img src="images/очки4.png" alt="Очки 4" />
+                </div>
+              </div>
+
+              <!-- Пятый слайд -->
+              <div class="carousel-item">
+                <div class="carousel-wrapper">
+                  <img src="images/очки5.png" alt="Очки 5" />
+                </div>
+              </div>
+
+              <!-- Шестой слайд -->
+              <div class="carousel-item">
+                <div class="carousel-wrapper">
+                  <img src="images/очки6.png" alt="Очки 6" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Кнопки навигации -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#glassesCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-arrow rounded-circle">
+                <span class="carousel-arrow-icon">&#8592;</span>
+              </span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#glassesCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-arrow rounded-circle">
+                <span class="carousel-arrow-icon">&#8594;</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="faq">
+      <div class="container">
+        <h2 class="mb-4">Вопросы о доставке и заказе секретных очков</h2>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a1"
+                aria-expanded="true"
+                aria-controls="a1"
+              >
+                Что такое «секретные очки»?
+              </button>
+            </h2>
+            <div
+              id="a1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="q1"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                При заказе вы получаете фирменную коробку, но не знаете заранее,
+                какие именно очки внутри. Это всегда сюрприз и часть концепции
+                бренда.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a2"
+                aria-expanded="false"
+                aria-controls="a2"
+              >
+                А если мне не понравятся очки?
+              </button>
+            </h2>
+            <div
+              id="a2"
+              class="accordion-collapse collapse"
+              aria-labelledby="q2"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                В этом и фишка — секретный выбор! Но каждая модель из коллекции
+                стильная и особенная. Если образ не зашёл, очки можно подарить
+                или обменяться с друзьями.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a3"
+                aria-expanded="false"
+                aria-controls="a3"
+              >
+                Как происходит доставка?
+              </button>
+            </h2>
+            <div
+              id="a3"
+              class="accordion-collapse collapse"
+              aria-labelledby="q3"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Очки упаковываются в брендированную коробку и отправляются
+                курьером или почтой. Сроки зависят от вашего региона (обычно 3–7
+                дней).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a4"
+                aria-expanded="false"
+                aria-controls="a4"
+              >
+                Есть ли гарантия?
+              </button>
+            </h2>
+            <div
+              id="a4"
+              class="accordion-collapse collapse"
+              aria-labelledby="q4"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Да, мы гарантируем, что все очки новые, качественные и
+                соответствуют стандартам защиты от ультрафиолета.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="secretGlassesModal"
+      tabindex="-1"
+      aria-labelledby="secretGlassesLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fbfbfb">
+          <div class="modal-header" style="background-color: #272727">
+            <h5 class="modal-title text-white" id="secretGlassesLabel">
+              Секретные очки 🎁
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body text-dark">
+            <p>
+              🎁 <strong>Секретные очки</strong> — это уникальный формат заказа,
+              где вы заранее не знаете, какие именно очки попадут в вашу
+              коробку.
+            </p>
+            <p>
+              Каждая пара выбирается случайным образом из нашей коллекции
+              стильных и нестандартных моделей.
+            </p>
+            <ul>
+              <li>
+                ✔️ Вы получаете оригинальную упаковку с гарантией качества.
+              </li>
+              <li>
+                ✔️ Все очки — новые и соответствуют уровню защиты от
+                ультрафиолета.
+              </li>
+              <li>
+                ✔️ Отличный способ удивить себя или сделать необычный подарок.
+              </li>
+            </ul>
+            <p>
+              <strong
+                >Хотите испытать удачу и добавить немного азарта в
+                покупку?</strong
+              >
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark px-3">
+              Оформить заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="py-5 bg-white" id="catalog-tabs">
+      <div class="container">
+        <h2 class="mb-4">Коллекции очков</h2>
+
+        <!-- Навигация табов (стиль из 1-го варианта) -->
+        <ul
+          class="nav nav-tabs justify-content-center brand-tabs"
+          id="glassesTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="all-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all"
+              type="button"
+              role="tab"
+              aria-controls="all"
+              aria-selected="true"
+            >
+              Все модели
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="unique-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#unique"
+              type="button"
+              role="tab"
+              aria-controls="unique"
+              aria-selected="false"
+            >
+              Нестандартные формы
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="premium-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#premium"
+              type="button"
+              role="tab"
+              aria-controls="premium"
+              aria-selected="false"
+            >
+              Премиум
+            </button>
+          </li>
+        </ul>
+
+        <!-- Контент табов (фон и размеры из 2-го варианта) -->
+        <div
+          class="tab-content brand-tab-content p-4 rounded-bottom"
+          id="glassesTabContent"
+        >
+          <!-- Все модели -->
+          <div
+            class="tab-pane fade show active"
+            id="all"
+            role="tabpanel"
+            aria-labelledby="all-tab"
+            tabindex="0"
+          >
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <p>
+                  <strong>Полный каталог</strong> объединяет классику и тренды в
+                  одном разделе, чтобы вы могли быстро найти свою пару. Мы
+                  собрали модели разной посадки, формы линз и ширины переносицы
+                  — всё, чтобы очки сидели комфортно и подчёркивали ваш стиль.
+                </p>
+                <p>
+                  Внутри коллекции — лёгкие металлические оправы для делового
+                  образа, пластик с выразительной геометрией для смелых
+                  сочетаний и минималистичные силуэты на каждый день. Обратите
+                  внимание на фильтры: ими удобно подбирать по форме лица и типу
+                  линз.
+                </p>
+                <p>
+                  Если сомневаетесь, начните с классических форм — они
+                  универсальны и подходят к большинству гардеробов. А когда
+                  захотите эксперимента, переходите к разделам с более
+                  выразительными линиями и цветовыми акцентами.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="photo-slot">
+                  <img
+                    src="images/чел1.png"
+                    class="img-fit"
+                    alt="Все модели — фото"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Нестандартные формы -->
+          <div
+            class="tab-pane fade"
+            id="unique"
+            role="tabpanel"
+            aria-labelledby="unique-tab"
+            tabindex="0"
+          >
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <p>
+                  <strong>Нестандартные формы</strong> — для тех, кто хочет
+                  выделяться. Здесь собраны модели с асимметрией, ломаной
+                  геометрией, «кошачьими» углами и смелыми силуэтами, которые
+                  превращают очки в главный акцент образа.
+                </p>
+                <p>
+                  Такие оправы работают как стильный приём: они задают
+                  настроение всему луку и отлично сочетаются с базовой одеждой.
+                  Попробуйте контраст: простая рубашка + выразительные очки — и
+                  образ уже выглядит продуманным.
+                </p>
+                <p>
+                  Совет: если вы впервые пробуете смелые формы, начните с
+                  умеренной геометрии и нейтральной палитры. Так вы сохраните
+                  баланс между яркой деталью и комфортом ежедневной носки.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="photo-slot">
+                  <img
+                    src="images/чел2.png"
+                    class="img-fit"
+                    alt="Нестандартные формы — фото"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Премиум -->
+          <div
+            class="tab-pane fade"
+            id="premium"
+            role="tabpanel"
+            aria-labelledby="premium-tab"
+            tabindex="0"
+          >
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <p>
+                  <strong>Премиальная коллекция</strong> — это отборные
+                  материалы, точная посадка и долговечность. Здесь вы найдёте
+                  ацетат высокой плотности, облегчённые сплавы и качественную
+                  фурнитуру, которая выдерживает ежедневный ритм.
+                </p>
+                <p>
+                  Мы уделяем внимание деталям: гладкая полировка кромок,
+                  аккуратные петли, ровная геометрия оправ. Благодаря этому очки
+                  выглядят дороже и служат дольше, сохраняя форму и комфорт.
+                </p>
+                <p>
+                  Подходит тем, кто ценит лаконичный дизайн и безупречное
+                  исполнение. Добавьте солнцезащитные или корректирующие линзы —
+                  и получите идеальный аксессуар как для офиса, так и для
+                  путешествий.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="photo-slot">
+                  <img
+                    src="images/чел3.png"
+                    class="img-fit"
+                    alt="Премиальная коллекция — фото"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background: #f2f2f2" id="signup">
+      <div class="container text-center">
+        <!-- верхняя зона под кнопку/ссылку -->
+        <div class="d-flex justify-content-end mb-3 signup-top-actions">
+          <!-- пример кнопки, можешь заменить/удалить -->
+          <button
+            class="btn btn-outline-dark btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#secretGlassesModal"
+          >
+            Правила акции
+          </button>
+        </div>
+
+        <h2 class="fw-semibold display-6 mb-2">ПОДПИШИСЬ И ПОЛУЧИ ПРОМОКОД</h2>
+        <p class="text-muted mb-4">
+          10% на первую покупку стильных очков (кроме раздела SALE)
+        </p>
+
+        <form
+          class="needs-validation d-flex justify-content-center"
+          novalidate
+          id="newsletterForm"
+        >
+          <div class="input-group" style="max-width: 560px">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="ВАШ E-MAIL"
+              aria-label="Email"
+              required
+            />
+            <button
+              class="btn btn-dark px-4"
+              type="submit"
+              style="background: #272727; border-color: #272727"
+            >
+              ПОДПИСАТЬСЯ
+            </button>
+            <div class="invalid-feedback text-start">
+              Укажите корректный e-mail.
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="pt-5 pb-4" style="background: #fbfbfb">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h6 class="fw-semibold mb-2">CUSTOMER SERVICE</h6>
+            <div class="small">
+              <div>+7 916 487 27 15</div>
+              <div>10:00–17:00 • UTC +1, Moscow</div>
+            </div>
+
+            <div class="d-flex gap-3 mt-3">
+              <a class="link-dark fs-4" href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="link-dark fs-4" href="#" aria-label="Pinterest"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+              <a class="link-dark fs-4" href="#" aria-label="TikTok"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a class="link-dark fs-4" href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h6 class="fw-semibold mb-2">МАГАЗИН</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a class="link-dark text-decoration-none" href="#glasses"
+                  >Очки</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark text-decoration-none"
+                  href="#faq"
+                  data-bs-toggle="modal"
+                  data-bs-target="#secretGlassesModal"
+                  >Секретный бокс</a
+                >
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none" href="#catalog-tabs"
+                  >Новые поступления</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h6 class="fw-semibold mb-2">ИНФО</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a class="link-dark text-decoration-none" href="#"
+                  >Доставка и возврат</a
+                >
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none" href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="link-dark text-decoration-none" href="#">О бренде</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Язык/валюта -->
+          <div class="col-lg-2">
+            <h6 class="fw-semibold mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-globe2"></i> EN / €
+            </h6>
+            <div class="small text-muted">Изменить язык и валюту</div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between small text-muted"
+        >
+          <div class="d-flex gap-3">
+            <a class="link-secondary text-decoration-none" href="#"
+              >Пользовательское соглашение</a
+            >
+            <a class="link-secondary text-decoration-none" href="#"
+              >Политика конфиденциальности</a
+            >
+          </div>
+          <div class="mt-2 mt-sm-0">&copy; 2025 SUBGLASS</div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+        const form = document.getElementById("newsletterForm");
+        form.addEventListener(
+          "submit",
+          function (e) {
+            if (!form.checkValidity()) {
+              e.preventDefault();
+              e.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      })();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
